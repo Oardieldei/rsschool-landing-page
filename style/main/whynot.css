@@ -1,0 +1,26 @@
+.whynot__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 60px;
+	justify-content: center;
+}
+
+.whynot__item {
+	max-width: 400px;
+}
+
+.whynot__item_title,
+.whynot__item_description {
+	padding: 20px;
+	color: var(--text-color);
+}
+
+.whynot__item_title {
+	text-align: center;
+	font-size: 20px;
+}
+
+.whynot__item_description {
+	border: 1px solid var(--border-color);
+	border-radius: 20px;
+}
