@@ -3,6 +3,7 @@
 	--border-color: black;
 	--text-color: black;
 	--link-hover-color: rgb(221, 67, 67);
+	--btn-hover-color: rgb(245, 152, 152);
 }
 
 .dark-theme {
@@ -10,4 +11,5 @@
 	--border-color: white;
 	--text-color: white;
 	--link-hover-color: rgb(0, 119, 255);
+	--btn-hover-color: rgb(0, 119, 255);
 }

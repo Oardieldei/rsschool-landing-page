@@ -16,6 +16,15 @@ a:visited {
 	color: var(--text-color);
 }
 
+.btn {
+	padding: 13px 20px;
+	font-size: 24px;
+	display: inline-block;
+	border: 1px solid var(--border-color);
+	border-radius: 15px;
+	color: var(--text-color);
+}
+
 @media (pointer: fine) and (hover: hover) {
 	a {
 		transition: .2s ease;
@@ -23,5 +32,15 @@ a:visited {
 
 	a:hover {
 		color: var(--link-hover-color);
+	}
+
+	.btn {
+		transition: .2s ease;
+	}
+
+	a.btn:hover {
+		color: var(--text-color);
+		background-color: var(--btn-hover-color);
+		border: 1px solid var(--btn-hover-color);
 	}
 }
