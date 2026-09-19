@@ -1,0 +1,1 @@
+import { memesCategories } from "../memesData/memes.js"
