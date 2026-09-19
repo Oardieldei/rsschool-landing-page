@@ -1,0 +1,13 @@
+.light-theme {
+	background-color: #fff;
+	--border-color: black;
+	--text-color: black;
+	--link-hover-color: rgb(221, 67, 67);
+}
+
+.dark-theme {
+	background-color: black;
+	--border-color: white;
+	--text-color: white;
+	--link-hover-color: rgb(0, 119, 255);
+}
