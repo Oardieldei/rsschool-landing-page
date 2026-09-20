@@ -1,0 +1,15 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 60px;
+	border-top: 1px solid var(--border-color);
+}
+
+.footer__extra {
+	display: flex;
+	align-items: flex-end;
+}
+
+.footer__text {
+	color: var(--text-color);
+}

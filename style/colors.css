@@ -12,4 +12,8 @@
 	--text-color: white;
 	--link-hover-color: rgb(0, 119, 255);
 	--btn-hover-color: rgb(0, 119, 255);
+
+	.theme_btn {
+		transform: rotate(180deg);
+	}
 }
