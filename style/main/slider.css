@@ -1,0 +1,131 @@
+:root {
+	--slider-width: 800px;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slider__wrapper {
+	width: min(100%, var(--slider-width));
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.slider__content {
+	width: 100%;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+}
+
+.slider__content::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__items_wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.slider__card_wrapper {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+	border-radius: 15px;
+	border: 1px solid var(--border-color);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.slider__arrows {
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+}
+
+.slider_arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 1px solid var(--border-color);
+	width: 42px;
+	height: 42px;
+	color: var(--text-color);
+}
+
+.slider__content {
+	width: 100%;
+}
+
+.slider__card__img_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider__card__img {
+	max-width: 100%;
+}
+
+.slider__card__info_wrapper {
+	padding: 40px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.slider__card__info_title {
+	color: var(--text-color);
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.slider__card__info_description {
+	color: var(--text-color);
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+
+.slider__card__info_score {
+	margin-top: auto;
+}
+
+.slider__card__info_score__desc {
+	color: var(--text-color);
+	font-size: 24px;
+}
+
+.slider__card__info_score__points {
+	font-size: 40px;
+}
+
+.green-score {
+	color: limegreen;
+}
+
+.orange-score {
+	color: orange;
+}
+
+.red-score {
+	color: red;
+}
+
+@media (pointer: fine) and (hover: hover) {
+	.slider_arrow {
+		transition: .2s ease;
+	}
+
+	.slider_arrow:hover {
+		cursor: pointer;
+		background-color: var(--link-hover-color);
+		border: 1px solid var(--link-hover-color);
+	}
+}

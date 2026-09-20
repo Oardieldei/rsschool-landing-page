@@ -16,4 +16,3 @@ export function getState() {
 export function saveState(state) {
 	localStorage.setItem('memesData', JSON.stringify(state))
 }
-
