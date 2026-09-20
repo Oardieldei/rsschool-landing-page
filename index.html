@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="./style/main/hero.css">
 	<link rel="stylesheet" href="./style/main/whynot.css">
 	<link rel="stylesheet" href="./style/main/slider.css">
+	<link rel="stylesheet" href="./style/main/info.css">
 </head>
 
 <body class="body">
@@ -27,9 +28,9 @@
 			<div class="header__rightside">
 				<nav class="nav">
 					<ul class="nav__list">
-						<li class="nav__item"><a href="#!" class="nav__link">Блок 1</a></li>
-						<li class="nav__item"><a href="#!" class="nav__link">Блок 2</a></li>
-						<li class="nav__item"><a href="#!" class="nav__link">Блок 3</a></li>
+						<li class="nav__item"><a href="#whynot" class="nav__link">Выгода</a></li>
+						<li class="nav__item"><a href="#slider" class="nav__link">Примеры</a></li>
+						<li class="nav__item"><a href="#info" class="nav__link">Описание работы</a></li>
 						<li class="nav__item"><a href="#!" class="nav__link">Каталог</a></li>
 						<li class="nav__item"><a href="#!" class="nav__link">Контакты</a></li>
 					</ul>
@@ -87,7 +88,7 @@
 				</div>
 				<a href="#!" class="btn hero__btn">Посмотреть мемы</a>
 			</section>
-			<section class="whynot">
+			<section class="whynot" id="whynot">
 				<h2 class="whynot__title">Мемы это класс 👍</h2>
 				<ul class="whynot__list">
 					<li class="whynot__item">
@@ -124,7 +125,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="slider">
+			<section class="slider" id="slider">
 				<h2 class="slider__title">Мемы это вот 👇</h2>
 				<div class="slider__wrapper">
 					<div class="slider__content">
@@ -136,6 +137,24 @@
 					</div>
 				</div>
 				<a href="#!" class="btn slider__btn">Посмотреть все</a>
+			</section>
+			<section class="info" id="info">
+				<h2 class="info__title">Мемы это объект 👩‍💻</h2>
+				<div class="info__texts">
+					<p class="info__text">Все мемчики (изображения) разбиты на папки-категории. Это сделано для того, чтобы
+						реализовать задания на странице с каталогом.</p>
+					<p class="info__text">В JS формируется удобный объект с категориями и именами файлов. На следующем шаге он
+						наполняется контентом: каждому мему присваиваются случайные title и description (они требуются по ТЗ), а
+						также добавляются дефолтные оценки по трем шкалам. Затем массив перемешивается.</p>
+					<p class="info__text">При первой загрузке слайдера все это формируется случайно и сохраняется в local storage,
+						а в самом слайдере выводятся первые 5 пикч из массива. При повторном входе объект выгружается из local
+						storage. Если хочется поиграться с рандомайзером, можно удалить запись с ключом 'memesData' из LS, а затем
+						обновить страницу.
+					</p>
+					<p class="info__text"></p>
+					<p class="info__text"></p>
+					<p class="info__text"></p>
+				</div>
 			</section>
 		</main>
 	</div>
