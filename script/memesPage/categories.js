@@ -1,4 +1,4 @@
-import { fillContaner } from "./fillContainer.js";
+import { fillContaner } from "./fillContainer.js"
 
 export function categoriesOnFire() {
 	const categoriegsItem = document.querySelector('.categories')

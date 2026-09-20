@@ -49,7 +49,7 @@ function createCardInfo(memeItem) {
 
 	const secondSpan = document.createElement('span')
 	secondSpan.classList.add('slider__card__info_score__points')
-	const score = ((+memeItem.humor + memeItem.humor + memeItem.humor) / 3).toFixed(1)
+	const score = ((+memeItem.humor + memeItem.relatability + memeItem.impact) / 3).toFixed(1)
 	secondSpan.textContent = score
 	if (+score >= 7) {
 		secondSpan.classList.add('green-score')
