@@ -26,6 +26,8 @@ export function makeThemesGreatAgain() {
 	const bodyItem = document.body
 	const themeItem = document.querySelector('.theme_btn')
 
+	bodyItem.classList.remove('dark-theme')
+	bodyItem.classList.remove('light-theme')
 	bodyItem.classList.add(getSavedTheme())
 
 	themeItem.addEventListener('click', () => {
