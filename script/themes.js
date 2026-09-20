@@ -15,11 +15,10 @@ const updateLS = (newTheme) => {
 }
 
 const getSavedTheme = () => {
-	if (localStorage.getItem('currentTheme')) {
-		return localStorage.getItem('currentTheme')
-	} else {
+	if (!localStorage.getItem('currentTheme')) {
 		updateLS('light-theme')
 	}
+	return localStorage.getItem('currentTheme')
 }
 
 export function makeThemesGreatAgain() {
