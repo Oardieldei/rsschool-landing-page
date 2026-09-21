@@ -20,7 +20,7 @@ function createCardImage(memeItem) {
 	const newImage = document.createElement('img')
 	newImage.classList.add('slider__card__img')
 	newImage.src = `./image/memes/${memeItem.category}/${memeItem.name}`
-	newImage.alt = 'this is meme'
+	newImage.alt = `this is meme named \"${memeItem.title}\"`
 	newImageWrapper.append(newImage)
 
 	return newImageWrapper
@@ -37,7 +37,7 @@ function createCardInfo(memeItem) {
 
 	const newDescription = document.createElement('p')
 	newDescription.classList.add('slider__card__info_description')
-	newDescription.textContent = memeItem.description
+	newDescription.textContent = `Мем из категории ${memeItem.category}.`
 	newInfoWrapper.append(newDescription)
 
 	const newScore = document.createElement('p')

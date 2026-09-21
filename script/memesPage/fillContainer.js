@@ -1,4 +1,4 @@
-import { getState } from "../memesData/state.js"
+import { memesInfo } from "../memes.js"
 import { createMemeCard } from "../meme-card.js"
 
 let CARDS_PER_PAGE = 8
@@ -26,7 +26,7 @@ export function fillContaner(type, reset = true) {
 
 	memesContent.innerHTML = ''
 
-	const memesData = getState()
+	const memesData = memesInfo
 
 	const filteredMemes = type === 'all'
 		? memesData

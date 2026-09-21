@@ -1,4 +1,4 @@
-import { getState } from "../memesData/state.js"
+import { memesInfo } from "../memes.js"
 import { createMemeCard } from "../meme-card.js"
 
 export function fillSlider() {
@@ -13,10 +13,12 @@ export function fillSlider() {
 	const slideWidth = sliderContent.clientWidth
 	const step = slideWidth + gap
 
-	const memesData = getState()
+	const memesData = memesInfo
+
+	const randomCardsIndexes = getRandomNumbers(memesData.length)
 
 	for (let i = 0; i < 5; i++) {
-		const newCard = createMemeCard(memesData[i])
+		const newCard = createMemeCard(memesData[randomCardsIndexes[i] - 1])
 		sliderItems.append(newCard)
 	}
 
@@ -48,4 +50,19 @@ export function fillSlider() {
 
 		goToSlide(prevIndex)
 	})
+}
+
+function getRandomNumbers(n) {
+  if (n < 5) {
+    return
+  }
+
+  const uniqueNumbers = new Set()
+
+  while (uniqueNumbers.size < 5) {
+    const random = Math.floor(Math.random() * n) + 1
+    uniqueNumbers.add(random)
+  }
+
+  return Array.from(uniqueNumbers)
 }
