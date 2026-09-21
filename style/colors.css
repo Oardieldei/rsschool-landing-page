@@ -4,6 +4,7 @@
 	--text-color: black;
 	--link-hover-color: rgb(221, 67, 67);
 	--btn-hover-color: rgb(245, 152, 152);
+	--bg-color: #fff;
 }
 
 .dark-theme {
@@ -12,6 +13,7 @@
 	--text-color: white;
 	--link-hover-color: rgb(0, 119, 255);
 	--btn-hover-color: rgb(0, 119, 255);
+	--bg-color: black;
 
 	.theme_btn {
 		transform: rotate(180deg);

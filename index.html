@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Memes market</title>
+	<link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+	<title>Memes hub</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -19,20 +20,26 @@
 	<link rel="stylesheet" href="./style/footer.css">
 </head>
 
-<body class="body light-theme">
+<body class="body">
 	<div class="full_wrapper">
 		<header class="header">
 			<a href="./" class="logo">
 				<span class="logo_bigpart">memes</span>
-				<span class="logo_smallart">market</span>
+				<span class="logo_smallart">hub</span>
 			</a>
 			<div class="header__rightside">
+				<input type="checkbox" id="burger_toggle" class="burger_toggle" hidden>
+				<label for="burger_toggle" class="burger_btn">
+					<span class="burger_btn_line"></span>
+					<span class="burger_btn_line"></span>
+					<span class="burger_btn_line"></span>
+				</label>
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item"><a href="#whynot" class="nav__link">Выгода</a></li>
 						<li class="nav__item"><a href="#slider" class="nav__link">Примеры</a></li>
 						<li class="nav__item"><a href="#info" class="nav__link">Описание работы</a></li>
-						<li class="nav__item"><a href="#!" class="nav__link">Каталог</a></li>
+						<li class="nav__item"><a href="./memes.html" class="nav__link">Каталог</a></li>
 						<li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
 					</ul>
 				</nav>
@@ -49,7 +56,7 @@
 				<div class="hero_upside">
 					<div class="hero__intro">
 						<span class="hero__intro_text">Добро пожаловать на</span>
-						<h1 class="hero__intro_header">memes market</h1>
+						<h1 class="hero__intro_header">memes hub</h1>
 					</div>
 					<div class="hero__image">
 						<svg class="hero__image_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
@@ -137,21 +144,14 @@
 						<div class="slider__next_btn slider_arrow">⇁</div>
 					</div>
 				</div>
-				<a href="#!" class="btn slider__btn">Посмотреть все</a>
+				<a href="./memes.html" class="btn slider__btn">Посмотреть все</a>
 			</section>
 			<section class="info" id="info">
 				<h2 class="info__title">Мемы это объект 👩‍💻</h2>
 				<div class="info__texts">
-					<p class="info__text">Все мемчики (изображения) разбиты на папки-категории. Это сделано для того, чтобы
-						реализовать задания на странице с каталогом.</p>
-					<p class="info__text">В JS формируется удобный объект с категориями и именами файлов. На следующем шаге он
-						наполняется контентом: каждому мему присваиваются случайные title и description (они требуются по ТЗ), а
-						также добавляются дефолтные оценки по трем шкалам. Затем массив перемешивается.</p>
-					<p class="info__text">При первой загрузке слайдера все это формируется случайно и сохраняется в local storage,
-						а в самом слайдере выводятся первые 5 пикч из массива. При повторном входе объект выгружается из local
-						storage. Если хочется поиграться с рандомайзером, можно удалить запись с ключом 'memesData' из LS, а затем
-						обновить страницу.
-					</p>
+					<p class="info__text">Привет! Приятного путешествия и приятной проверки. Я чуть расскажу, как работает под капотом, чтобы тебе было легче проверять.</p>
+					<p class="info__text">В данный момент сделано все, кроме модалки. Темы переключаются, бургер функционирует, карточки в каталоге тоже отображаются норм, по категориям и со стрелкой "больше". Слайдер тоже работает, а мемчики "для примера" подбираются из общего массива рандомно.</p>
+					<p class="info__text">Объект хранится в файле memes.js. Там есть данные по файлу и по самому мему, которые уже подтягиваются в карточки. Данные оценок (юмор, жизненность, полезность) были заранее сгенерированы рандомайзером, так что на средний балл в карточках можешь не обращать внимания.</p>
 				</div>
 			</section>
 		</main>
@@ -165,14 +165,14 @@
 						связи со мной)</a></li>
 			</ul>
 			<ul class="links">
-				<li class="links_item"><a href="https://youtu.be/dQw4w9WgXcQ?si=4YOeukV0icNq5MEa" class="links_link"
-						target="_blank">dailymeme.com</a></li>
-				<li class="links_item"><a href="https://youtu.be/dQw4w9WgXcQ?si=4YOeukV0icNq5MEa" class="links_link"
-						target="_blank">lurkmore.media/Мем</a></li>
-				<li class="links_item"><a href="https://youtu.be/dQw4w9WgXcQ?si=4YOeukV0icNq5MEa" class="links_link"
-						target="_blank">wikipedia.org/wiki/Мем</a></li>
-				<li class="links_item"><a href="https://youtu.be/dQw4w9WgXcQ?si=4YOeukV0icNq5MEa" class="links_link"
-						target="_blank">memepedia.ru</a></li>
+				<li class="links_item"><a href="https://edramatica.com/Main_Page" class="links_link"
+						target="_blank">Edramatica</a></li>
+				<li class="links_item"><a href="hhttps://lurkmore.media/%D0%9C%D0%B5%D0%BC" class="links_link"
+						target="_blank">Lurkmore</a></li>
+				<li class="links_item"><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B5%D0%BC" class="links_link"
+						target="_blank">Wikipedia</a></li>
+				<li class="links_item"><a href="https://memepedia.ru/" class="links_link"
+						target="_blank">Memepedia</a></li>
 			</ul>
 			<div class="footer__extra">
 				<p class="footer__text">Сделано в 2026 году ✌️</p>

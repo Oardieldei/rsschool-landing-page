@@ -24,3 +24,22 @@
 	border: 1px solid var(--border-color);
 	border-radius: 20px;
 }
+
+@media (max-width: 720px) {
+	.whynot__list {
+		gap: 10px;
+	}
+
+	.whynot__item_title,
+	.whynot__item_description {
+		padding: 10px;
+	}
+
+	.whynot__item_title {
+		font-size: 18px;
+	}
+
+	.whynot__item_description {
+		font-size: 12px;
+	}
+}
