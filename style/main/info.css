@@ -1,0 +1,23 @@
+.info__texts {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.info__text {
+	color: var(--text-color);
+	font-size: 18px;
+	text-align: justify;
+	padding: 0 20px;
+}
+
+@media (max-width: 720px) {
+	.info__texts {
+		gap: 12px;
+	}
+
+	.info__text {
+		font-size: 14px;
+		padding: 0;
+	}
+}

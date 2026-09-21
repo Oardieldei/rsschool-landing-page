@@ -1,0 +1,35 @@
+const changeTheme = (bodyItem) => {
+	if (bodyItem.classList.contains('light-theme')) {
+		bodyItem.classList.remove('light-theme')
+		bodyItem.classList.add('dark-theme')
+		updateLS('dark-theme')
+	} else {
+		bodyItem.classList.add('light-theme')
+		bodyItem.classList.remove('dark-theme')
+		updateLS('light-theme')
+	}
+}
+
+const updateLS = (newTheme) => {
+	localStorage.setItem('currentTheme', newTheme)
+}
+
+const getSavedTheme = () => {
+	if (!localStorage.getItem('currentTheme')) {
+		updateLS('light-theme')
+	}
+	return localStorage.getItem('currentTheme')
+}
+
+export function makeThemesGreatAgain() {
+	const bodyItem = document.body
+	const themeItem = document.querySelector('.theme_btn')
+
+	bodyItem.classList.remove('dark-theme')
+	bodyItem.classList.remove('light-theme')
+	bodyItem.classList.add(getSavedTheme())
+
+	themeItem.addEventListener('click', () => {
+		changeTheme(bodyItem)
+	})
+}

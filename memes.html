@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+	<title>Memes hub</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style/clean.css">
+	<link rel="stylesheet" href="./style/colors.css">
+	<link rel="stylesheet" href="./style/full.css">
+	<link rel="stylesheet" href="./style/header.css">
+	<link rel="stylesheet" href="./style/memes-page.css">
+	<link rel="stylesheet" href="./style/footer.css">
+</head>
+
+<body class="body">
+	<div class="full_wrapper">
+		<header class="header">
+			<a href="./" class="logo">
+				<span class="logo_bigpart">memes</span>
+				<span class="logo_smallart">hub</span>
+			</a>
+			<div class="header__rightside">
+				<input type="checkbox" id="burger_toggle" class="burger_toggle" hidden>
+				<label for="burger_toggle" class="burger_btn">
+					<span class="burger_btn_line"></span>
+					<span class="burger_btn_line"></span>
+					<span class="burger_btn_line"></span>
+				</label>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="./#whynot" class="nav__link">Выгода</a></li>
+						<li class="nav__item"><a href="./#slider" class="nav__link">Примеры</a></li>
+						<li class="nav__item"><a href="./#info" class="nav__link">Описание работы</a></li>
+						<li class="nav__item"><a href="#memeski" class="nav__link">Каталог</a></li>
+						<li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="theme_btn">
+					<div class="theme_icon">
+						<div class="theme_icon_dark"></div>
+						<div class="theme_icon_light"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main" id="memeski">
+			<h1 class="title">Время посмотреть мемчики</h1>
+			<h2 class="subtitle">(если хочется)</h2>
+			<ul class="categories">
+				<li class="category category_active">all</li>
+				<li class="category">ayf</li>
+				<li class="category">chat</li>
+				<li class="category">lotsoftext</li>
+				<li class="category">mood</li>
+				<li class="category">other</li>
+			</ul>
+			<div class="memes__wrapper"></div>
+			<div class="more" hidden>⟳</div>
+		</main>
+		<footer class="footer" id="footer">
+			<ul class="contacts">
+				<li class="contacts_item"><a href="https://youtu.be/dQw4w9WgXcQ?si=4YOeukV0icNq5MEa" class="contacts_link"
+						target="_blank">Здесь ссылка на сайт</a></li>
+				<li class="contacts_item"><a href="mailto:meme@always.fun" class="contacts_link">А вот тут email</a></li>
+				<li class="contacts_item"><a href="tel:+76767676767" class="contacts_link">Еще телефон можно</a></li>
+				<li class="contacts_item"><a href="https://t.me/oardieldei" class="contacts_link" target="_blank">Ну и тг (для
+						связи со мной)</a></li>
+			</ul>
+			<ul class="links">
+				<li class="links_item"><a href="https://edramatica.com/Main_Page" class="links_link"
+						target="_blank">Edramatica</a></li>
+				<li class="links_item"><a href="https://lurkmore.media/%D0%9C%D0%B5%D0%BC" class="links_link"
+						target="_blank">Lurkmore</a></li>
+				<li class="links_item"><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B5%D0%BC" class="links_link"
+						target="_blank">Wikipedia</a></li>
+				<li class="links_item"><a href="https://memepedia.ru/" class="links_link"
+						target="_blank">Memepedia</a></li>
+			</ul>
+			<div class="footer__extra">
+				<p class="footer__text">Сделано в 2026 году ✌️</p>
+			</div>
+		</footer>
+	</div>
+	<script type="module" src="./script/memes-page.js"></script>
+</body>
+
+</html>
