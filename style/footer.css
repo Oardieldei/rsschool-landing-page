@@ -3,6 +3,7 @@
 	justify-content: space-between;
 	padding: 40px 60px;
 	border-top: 1px solid var(--border-color);
+	align-items: center;
 }
 
 .footer__extra {
@@ -12,4 +13,18 @@
 
 .footer__text {
 	color: var(--text-color);
+}
+
+@media (max-width: 720px) {
+	.footer {
+		flex-direction: column;
+		gap: 20px;
+		padding: 25px 15px;
+	}
+
+	.contacts_item,
+	.links_item {
+		display: flex;
+		justify-content: center;
+	}
 }

@@ -20,6 +20,7 @@ function createCardImage(memeItem) {
 	const newImage = document.createElement('img')
 	newImage.classList.add('slider__card__img')
 	newImage.src = `./image/memes/${memeItem.category}/${memeItem.name}`
+	newImage.alt = 'this is meme'
 	newImageWrapper.append(newImage)
 
 	return newImageWrapper

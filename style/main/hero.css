@@ -46,3 +46,31 @@
 	font-size: 56px;
 	align-self: flex-end;
 }
+
+@media (max-width: 1090px) {
+	.hero_upside {
+		flex-direction: column;
+	}
+
+	.hero__image_svg {
+		max-width: 100%;
+	}
+
+	.hero__intro {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 720px) {
+	.hero {
+		gap: 20px;
+	}
+
+	.hero__intro_text {
+		font-size: 24px;
+	}
+
+	.hero__intro_header {
+		font-size: 26px;
+	}
+}

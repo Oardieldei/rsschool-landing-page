@@ -135,3 +135,24 @@
 		border: 1px solid var(--link-hover-color);
 	}
 }
+
+@media (max-width: 720px) {
+	.main {
+		padding: 20px 10px;
+	}
+
+	.title {
+		font-size: 36px;
+	}
+
+	.memes__wrapper {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 444px) {
+	.categories {
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+}
