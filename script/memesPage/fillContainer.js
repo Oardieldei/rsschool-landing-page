@@ -1,12 +1,22 @@
 import { getState } from "../memesData/state.js"
 import { createMemeCard } from "../meme-card.js"
 
-const CARDS_PER_PAGE = 8
+let CARDS_PER_PAGE = 8
 
 let currentType = 'all'
 let visibleCount = CARDS_PER_PAGE
 
 export function fillContaner(type, reset = true) {
+	if (window.innerWidth > 1381) {
+		CARDS_PER_PAGE = 8
+	} else if (window.innerWidth > 1061) {
+		CARDS_PER_PAGE = 6
+	} else if (window.innerWidth > 641) {
+		CARDS_PER_PAGE = 4
+	} else {
+		CARDS_PER_PAGE = 3
+	}
+
 	const memesContent = document.querySelector('.memes__wrapper')
 
 	if (reset) {
