@@ -111,6 +111,10 @@ body.menu-open {
 }
 
 @media (max-width: 768px) {
+	.header__rightside {
+		flex-direction: row-reverse;
+	}
+
 	.burger_btn {
 		display: flex;
 		justify-content: center;

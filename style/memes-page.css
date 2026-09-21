@@ -5,8 +5,12 @@
 .title {
 	font-size: 48px;
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	color: var(--text-color);
+}
+
+.subtitle {
+	margin-bottom: 60px;
 }
 
 .categories {
@@ -35,11 +39,9 @@
 	width: 100%;
 	margin-bottom: 20px;
 	break-inside: avoid;
-
 	border-radius: 15px;
 	border: 1px solid var(--border-color);
 	overflow: hidden;
-
 	display: flex;
 	flex-direction: column;
 }
@@ -133,6 +135,16 @@
 		cursor: pointer;
 		background-color: var(--link-hover-color);
 		border: 1px solid var(--link-hover-color);
+	}
+
+	.slider__card_wrapper {
+		transition: box-shadow .2s ease, transform .15s ease;
+	}
+
+	.slider__card_wrapper:hover {
+		cursor: pointer;
+		box-shadow: 0 0 20px var(--link-hover-color);
+		transform: scale(1.01, 1.01);
 	}
 }
 
