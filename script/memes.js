@@ -3,7 +3,7 @@ export const memesInfo = [
 	{ name: '2.jpg', category: 'ayf', title: 'Знак Вселенной', humor: 7, relatability: 7, impact: 10 },
 	{ name: '3.jpg', category: 'ayf', title: 'Аминь', humor: 0, relatability: 1, impact: 1 },
 	{ name: '4.jpg', category: 'ayf', title: 'Мужчины ух', humor: 7, relatability: 6, impact: 6 },
-	{ name: '5.jpg', category: 'ayf', title: 'Gо дружбе', humor: 3, relatability: 1, impact: 9 },
+	{ name: '5.jpg', category: 'ayf', title: 'Только дружба', humor: 3, relatability: 1, impact: 9 },
 	{ name: '6.jpg', category: 'ayf', title: 'Мнения?', humor: 2, relatability: 1, impact: 3 },
 	{ name: '7.jpg', category: 'ayf', title: 'Собачий вальс', humor: 9, relatability: 8, impact: 1 },
 	{ name: '8.jpg', category: 'ayf', title: 'Ты попробуй', humor: 10, relatability: 1, impact: 6 },
