@@ -20,7 +20,7 @@
 	right: 0;
 	top: 0;
 	height: 100vh;
-	background-color: #000000cc;
+	background-color: var(--bg-color-noisy);
 	z-index: 2;
 	align-items: center;
 	justify-content: center;
@@ -76,7 +76,7 @@
 	font-size: 18px;
 }
 
-.modal__info_humor_title__wrapper {
+.modal__info_nums__title__wrapper {
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -165,5 +165,76 @@
 
 	.modal__close:hover {
 		transform: scale(1.1, 1.1);
+	}
+}
+
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 768px) {
+	.modal__wrapper {
+		flex-direction: column;
+	}
+
+	.modal__img_wrapper,
+	.modal__info_wrapper {
+		max-width: 100%;
+	}
+
+	.modal {
+		padding: 20px;
+	}
+
+	.modal__img_wrapper,
+	.modal__info_wrapper {
+		padding: 20px;
+	}
+
+	.modal__info_wrapper {
+		gap: 10px;
+	}
+
+	.modal__info_title {
+		font-size: 24px;
+	}
+
+	.modal__info_description,
+	.modal__info_nums__title_num {
+		font-size: 18px;
+	}
+
+	.modal__info_nums__title_text {
+		font-size: 14px;
+	}
+
+	.modal__info_humor_title__wrapper {
+		padding-top: 10px;
+	}
+
+	.modal__info_nums__wrapper {
+		padding-top: 5px;
+		gap: 5px;
+	}
+
+	.modal__info_nums__input {
+		height: 4px;
+	}
+
+	.modal__info_nums__input::-webkit-slider-thumb {
+		width: 16px;
+		height: 16px;
+	}
+
+	.modal__info_scores__wrapper {
+		padding-top: 10px;
+		gap: 10px;
+	}
+
+	.modal__info_scores__text {
+		font-size: 18px;
+	}
+
+	.modal__info_scores__num {
+		font-size: 24px;
 	}
 }
