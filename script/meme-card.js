@@ -1,7 +1,15 @@
+import { updateModal } from "./modal/changeModal.js"
+import { openModal } from "./modal/open.js"
+
 export function createMemeCard(memeItem) {
 	const newCard = createCardWrapper()
 	newCard.append(createCardImage(memeItem))
 	newCard.append(createCardInfo(memeItem))
+
+	newCard.addEventListener('click', () => {
+		updateModal(memeItem)
+		openModal()
+	})
 
 	return newCard
 }
@@ -50,7 +58,7 @@ function createCardInfo(memeItem) {
 
 	const secondSpan = document.createElement('span')
 	secondSpan.classList.add('slider__card__info_score__points')
-	const score = ((+memeItem.humor + memeItem.relatability + memeItem.impact) / 3).toFixed(1)
+	const score = ((+memeItem.humor + +memeItem.relatability + +memeItem.impact) / 3).toFixed(1)
 	secondSpan.textContent = score
 	if (+score >= 7) {
 		secondSpan.classList.add('green-score')

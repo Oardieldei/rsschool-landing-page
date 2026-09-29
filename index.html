@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="./style/main/slider.css">
 	<link rel="stylesheet" href="./style/main/info.css">
 	<link rel="stylesheet" href="./style/footer.css">
+	<link rel="stylesheet" href="./style/modal.css">
 </head>
 
 <body class="body">
@@ -149,9 +150,16 @@
 			<section class="info" id="info">
 				<h2 class="info__title">Мемы это объект 👩‍💻</h2>
 				<div class="info__texts">
-					<p class="info__text">Привет! Приятного путешествия и приятной проверки. Я чуть расскажу, как работает под капотом, чтобы тебе было легче проверять.</p>
-					<p class="info__text">В данный момент сделано все, кроме модалки. Темы переключаются, бургер функционирует, карточки в каталоге тоже отображаются норм, по категориям и со стрелкой "больше". Слайдер тоже работает, а мемчики "для примера" подбираются из общего массива рандомно.</p>
-					<p class="info__text">Объект хранится в файле memes.js. Там есть данные по файлу и по самому мему, которые уже подтягиваются в карточки. Данные оценок (юмор, жизненность, полезность) были заранее сгенерированы рандомайзером, так что на средний балл в карточках можешь не обращать внимания.</p>
+					<p class="info__text">Привет! Приятного путешествия и приятной проверки. Я чуть расскажу, как работает под
+						капотом, чтобы тебе было легче проверять.</p>
+					<p class="info__text">В данный момент сделано все, кроме модалки. Темы переключаются, бургер функционирует,
+						карточки в каталоге тоже отображаются норм, по категориям и со стрелкой "больше". Слайдер тоже работает, а
+						мемчики "для примера" подбираются из общего массива рандомно.</p>
+					<p class="info__text">Объект хранится в файле memes.js. Там есть данные по файлу и по самому мему, которые уже
+						подтягиваются в карточки. Данные оценок (юмор, жизненность, полезность) были заранее сгенерированы
+						рандомайзером, так что на средний балл в карточках можешь не обращать внимания.</p>
+					<p class="info__text">UPD: Ну вот и модалку тоже сделал. Попутно поправил пару недочетов, которые успел
+						обнаружить. По идее все? Ну все. Приятной проверки!</p>
 				</div>
 			</section>
 		</main>
@@ -169,15 +177,64 @@
 						target="_blank">Edramatica</a></li>
 				<li class="links_item"><a href="hhttps://lurkmore.media/%D0%9C%D0%B5%D0%BC" class="links_link"
 						target="_blank">Lurkmore</a></li>
-				<li class="links_item"><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B5%D0%BC" class="links_link"
-						target="_blank">Wikipedia</a></li>
-				<li class="links_item"><a href="https://memepedia.ru/" class="links_link"
-						target="_blank">Memepedia</a></li>
+				<li class="links_item"><a
+						href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B5%D0%BC"
+						class="links_link" target="_blank">Wikipedia</a></li>
+				<li class="links_item"><a href="https://memepedia.ru/" class="links_link" target="_blank">Memepedia</a></li>
 			</ul>
 			<div class="footer__extra">
 				<p class="footer__text">Сделано в 2026 году ✌️</p>
 			</div>
 		</footer>
+	</div>
+	<div class="modal">
+		<div class="modal__wrapper">
+			<div class="modal__img_wrapper">
+				<img src="./image/memes/chat/7.jpg" alt="meme image" class="modal__img">
+			</div>
+			<div class="modal__info_wrapper">
+				<div class="modal__info_title">Мем номер 666</div>
+				<div class="modal__info_description">Мем из какой-то категории</div>
+				<div class="modal__info_humor__wrapper modal__info_nums__wrapper">
+					<div class="modal__info_humor_title__wrapper modal__info_nums__title__wrapper">
+						<span class="modal__info_nums__title_text">Юмор</span>
+						<span class="modal__info_nums__title_num modal__info_humor__num green-score">7</span>
+					</div>
+					<div class="modal__info_nums__input__wrapper">
+						<input class="modal__info_humor_input modal__info_nums__input" type="range" min="0" max="10" value="5"
+							step="1">
+					</div>
+				</div>
+				<div class="modal__info_relatability__wrapper modal__info_nums__wrapper">
+					<div class="modal__info_relatability_title__wrapper modal__info_nums__title__wrapper">
+						<span class="modal__info_nums__title_text">Жизненность</span>
+						<span class="modal__info_nums__title_num modal__info_relatability__num green-score">7</span>
+					</div>
+					<div class="modal__info_nums__input__wrapper">
+						<input class="modal__info_relatability_input modal__info_nums__input" type="range" min="0" max="10"
+							value="5" step="1">
+					</div>
+				</div>
+				<div class="modal__info_impact__wrapper modal__info_nums__wrapper">
+					<div class="modal__info_impact_title__wrapper modal__info_nums__title__wrapper">
+						<span class="modal__info_nums__title_text">Полезность</span>
+						<span class="modal__info_nums__title_num modal__info_impact__num green-score">7</span>
+					</div>
+					<div class="modal__info_nums__input__wrapper">
+						<input class="modal__info_impact_input modal__info_nums__input" type="range" min="0" max="10" value="5"
+							step="1">
+					</div>
+				</div>
+				<div class="modal__info_scores__wrapper">
+					<span class="modal__info_scores__text">Средний балл:</span>
+					<span class="modal__info_scores__num orange-score">4.6</span>
+				</div>
+			</div>
+			<div class="modal__close">
+				<span class="modal__close_line_one modal__close_line"></span>
+				<span class="modal__close_line_two modal__close_line"></span>
+			</div>
+		</div>
 	</div>
 	<script type="module" src="./script/main.js"></script>
 </body>

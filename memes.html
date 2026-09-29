@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="./style/header.css">
 	<link rel="stylesheet" href="./style/memes-page.css">
 	<link rel="stylesheet" href="./style/footer.css">
+	<link rel="stylesheet" href="./style/modal.css">
 </head>
 
 <body class="body">
@@ -85,6 +86,55 @@
 				<p class="footer__text">Сделано в 2026 году ✌️</p>
 			</div>
 		</footer>
+	</div>
+	<div class="modal">
+		<div class="modal__wrapper">
+			<div class="modal__img_wrapper">
+				<img src="./image/memes/chat/7.jpg" alt="meme image" class="modal__img">
+			</div>
+			<div class="modal__info_wrapper">
+				<div class="modal__info_title">Мем номер 666</div>
+				<div class="modal__info_description">Мем из какой-то категории</div>
+				<div class="modal__info_humor__wrapper modal__info_nums__wrapper">
+					<div class="modal__info_humor_title__wrapper modal__info_nums__title__wrapper">
+						<span class="modal__info_nums__title_text">Юмор</span>
+						<span class="modal__info_nums__title_num modal__info_humor__num green-score">7</span>
+					</div>
+					<div class="modal__info_nums__input__wrapper">
+						<input class="modal__info_humor_input modal__info_nums__input" type="range" min="0" max="10" value="5"
+							step="1">
+					</div>
+				</div>
+				<div class="modal__info_relatability__wrapper modal__info_nums__wrapper">
+					<div class="modal__info_relatability_title__wrapper modal__info_nums__title__wrapper">
+						<span class="modal__info_nums__title_text">Жизненность</span>
+						<span class="modal__info_nums__title_num modal__info_relatability__num green-score">7</span>
+					</div>
+					<div class="modal__info_nums__input__wrapper">
+						<input class="modal__info_relatability_input modal__info_nums__input" type="range" min="0" max="10" value="5"
+							step="1">
+					</div>
+				</div>
+				<div class="modal__info_impact__wrapper modal__info_nums__wrapper">
+					<div class="modal__info_impact_title__wrapper modal__info_nums__title__wrapper">
+						<span class="modal__info_nums__title_text">Полезность</span>
+						<span class="modal__info_nums__title_num modal__info_impact__num green-score">7</span>
+					</div>
+					<div class="modal__info_nums__input__wrapper">
+						<input class="modal__info_impact_input modal__info_nums__input" type="range" min="0" max="10" value="5"
+							step="1">
+					</div>
+				</div>
+				<div class="modal__info_scores__wrapper">
+					<span class="modal__info_scores__text">Средний балл:</span>
+					<span class="modal__info_scores__num orange-score">4.6</span>
+				</div>
+			</div>
+			<div class="modal__close">
+				<span class="modal__close_line_one modal__close_line"></span>
+				<span class="modal__close_line_two modal__close_line"></span>
+			</div>
+		</div>
 	</div>
 	<script type="module" src="./script/memes-page.js"></script>
 </body>
