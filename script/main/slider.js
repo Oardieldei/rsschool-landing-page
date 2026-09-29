@@ -9,10 +9,6 @@ export function fillSlider() {
 	const nextBtn = arrowsItems.children[1]
 	const prevBtn = arrowsItems.children[0]
 
-	const gap = parseFloat(getComputedStyle(sliderItems).columnGap)
-	const slideWidth = sliderContent.clientWidth
-	const step = slideWidth + gap
-
 	const memesData = memesInfo
 
 	const randomCardsIndexes = getRandomNumbers(memesData.length)
@@ -23,46 +19,46 @@ export function fillSlider() {
 	}
 
 	const slidesCount = sliderItems.children.length
+	let currentIndex = 0
 
 	function goToSlide(index) {
+		currentIndex = index
+
 		sliderContent.scrollTo({
-			left: index * step,
+			left: sliderItems.children[index].offsetLeft,
 			behavior: 'smooth'
 		})
 	}
 
 	nextBtn.addEventListener('click', () => {
-		const currentIndex = Math.round(
-			sliderContent.scrollLeft / step
-		)
-
 		const nextIndex = (currentIndex + 1) % slidesCount
-
 		goToSlide(nextIndex)
 	})
 
 	prevBtn.addEventListener('click', () => {
-		const currentIndex = Math.round(
-			sliderContent.scrollLeft / step
-		)
-
 		const prevIndex = (currentIndex - 1 + slidesCount) % slidesCount
-
 		goToSlide(prevIndex)
+	})
+
+	window.addEventListener('resize', () => {
+		sliderContent.scrollTo({
+			left: sliderItems.children[currentIndex].offsetLeft,
+			behavior: 'instant'
+		})
 	})
 }
 
 function getRandomNumbers(n) {
-  if (n < 5) {
-    return
-  }
+	if (n < 5) {
+		return
+	}
 
-  const uniqueNumbers = new Set()
+	const uniqueNumbers = new Set()
 
-  while (uniqueNumbers.size < 5) {
-    const random = Math.floor(Math.random() * n) + 1
-    uniqueNumbers.add(random)
-  }
+	while (uniqueNumbers.size < 5) {
+		const random = Math.floor(Math.random() * n) + 1
+		uniqueNumbers.add(random)
+	}
 
-  return Array.from(uniqueNumbers)
+	return Array.from(uniqueNumbers)
 }
